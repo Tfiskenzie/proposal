@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wav.format | Summer 2025 Partnerships</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#8B0000", secondary: "#0066CC" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+      }
+      .grain-overlay {
+      position: relative;
+      }
+      .grain-overlay::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("");
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 1;
+      }
+      .hero-video-container {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      }
+      .hero-video-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+      z-index: 1;
+      }
+      .hero-content {
+      position: relative;
+      z-index: 2;
+      }
+      .scroll-indicator {
+      animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      }
+      40% {
+      transform: translateY(-20px);
+      }
+      60% {
+      transform: translateY(-10px);
+      }
+      }
+      .service-card {
+      transition: all 0.3s ease;
+      }
+      .service-card:hover {
+      transform: translateY(-10px);
+      }
+      .benefit-card {
+      transition: all 0.3s ease;
+      }
+      .benefit-card:hover {
+      transform: translateY(-5px);
+      }
+      .collab-card {
+      transition: all 0.3s ease;
+      }
+      .collab-card:hover {
+      transform: translateY(-8px);
+      }
+      .timeline-item {
+      position: relative;
+      }
+      .timeline-item::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #FF7A00;
+      top: 30px;
+      left: 50%;
+      z-index: -1;
+      }
+      .timeline-item:last-child::after {
+      display: none;
+      }
+      .gallery-item {
+      overflow: hidden;
+      position: relative;
+      }
+      .gallery-item img {
+      transition: transform 0.5s ease;
+      }
+      .gallery-item:hover img {
+      transform: scale(1.05);
+      }
+      .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      }
+      .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+      }
+      .testimonial-card {
+      transition: all 0.3s ease;
+      }
+      .testimonial-card:hover {
+      transform: translateY(-5px);
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      .custom-checkbox {
+      position: relative;
+      cursor: pointer;
+      }
+      .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      }
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      }
+      .custom-checkbox:hover input ~ .checkmark {
+      border-color: #ccc;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+      background-color: #FF7A00;
+      border-color: #FF7A00;
+      }
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+      display: block;
+      }
+      .custom-checkbox .checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-transparent z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+      <a href="http://wavformat.vercel.app"><div class="text-white text-2xl font-['Montserrat']">wav.format</div></a>  <div class="text-white text-2xl font-['Montserrat']">wav.format</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-white hover:text-primary font-medium"
+            >About</a
+          >
+          <a href="#services" class="text-white hover:text-primary font-medium"
+            >Services</a
+          >
+          <a href="#models" class="text-white hover:text-primary font-medium"
+            >Collaboration</a
+          >
+          <a href="#portfolio" class="text-white hover:text-primary font-medium"
+            >Portfolio</a
+          >
+    
+        </div>
+        <div class="hidden md:block">
+          <a
+            href="#contact"
+            class="text-3xl text-white px-6 py-2 font-['pacifico'] !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
+            >Contact Us</a
+          >
+        </div>
+        <div
+          class="md:hidden w-10 h-10 flex items-center justify-center text-white"
+          id="mobile-menu-button"
+        >
+          <i class="ri-menu-line ri-2x"></i>
+        </div>
+      </div>
+      <div
+        class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden transition-opacity duration-300"
+        id="mobile-menu-overlay"
+      ></div>
+      <div
+        class="md:hidden fixed right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <span class="text-xl font-['Pacifico'] text-primary">Menu</span>
+            <button
+              id="close-mobile-menu"
+              class="text-gray-500 hover:text-gray-700"
+            >
+              <i class="ri-close-line ri-2x"></i>
+            </button>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-3">MAIN</h3>
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="#about"
+                    class="flex items-center text-gray-800 hover:text-primary"
+                  >
+                    <i class="ri-information-line mr-3"></i>
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="flex items-center text-gray-800 hover:text-primary"
+                  >
+                    <i class="ri-service-line mr-3"></i>
+                    <span>Our Services</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-gray-100">
+              <a
+                href="#contact"
+                class="block bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-center"
+              >
+                <i class="ri-chat-1-line mr-2"></i>Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-video-container flex items-center justify-center">
+      <div
+        style="background-image: url('sunset2.jpg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"
+      ></div>
+      <div class="hero-content container mx-auto px-4 text-center">
+        <h1
+          class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-['pacifico'] text-white leading-tight mb-6"
+        >
+          Partner With Us <br class="hidden md:block" />
+          This Summer!
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto">
+          Elevate your brand presence during Lagos' most vibrant season.
+          <br class="hidden md:block" />
+          June - September 2025
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+         
+          <a
+            href="https://www.instagram.com/thewavformat"
+            class="bg-transparent text-white px-2 py-3 text-3xl font-['Montserrat'] !rounded-button whitespace-nowrap font-semibold hover:bg-transparent transition text2g"
+            ></a
+          >
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white scroll-indicator"
+      >
+        <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-arrow-down-line ri-xl"></i>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Wav.format Production</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            We are Lagos' premier creative agency specializing in capturing the
+            pulse of youth culture through immersive content creation and event
+            coverage. Since 2018, we've been documenting Nigeria's vibrant
+            cultural landscape, working with leading brands and artists to
+            create authentic connections.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="space-y-8">
+              <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                <h3 class="text-2xl font-bold mb-4">
+                  Our Summer 2025 Initiative
+                </h3>
+                <p class="text-gray-700">
+                  As Lagos comes alive during the summer months, we're offering
+                  exclusive partnership opportunities for brands, events,
+                  festivals, and artists looking to make a lasting impact on
+                  Nigeria's creative scene.
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-6">
+                <div class="bg-black bg-opacity-5 p-6 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4"
+                  >
+                    <i class="ri-award-line text-black text-xl"></i>
+                  </div>
+                  <h4 class="font-bold mb-2">3+ Years</h4>
+                  <p class="text-gray-600 text-sm">Industry Experience</p>
+                </div>
+                <div class="bg-black bg-opacity-5 p-6 rounded-lg">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4"
+                  >
+                    <i class="ri-team-line text-black text-xl"></i>
+                  </div>
+                  <h4 class="font-bold mb-2">50+ Clients</h4>
+                  <p class="text-gray-600 text-sm">Successful Projects</p>
+                </div>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="font-bold mb-3 text-3xl">Our Creative Team.</h4>
+                <p class="text-gray-700 mb-4">
+                  Our team of directors, photographers, and content creators are
+                  ready to transform your summer activations into compelling
+                  visual stories that resonate with audiences across platforms.
+                </p>
+                <div class="flex -space-x-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    BX
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-red-900 text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    HS
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    TW
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    +20
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-between bg-gray-50 p-6 rounded-lg"
+              >
+                <a
+                  href="#services"
+                  class="bg-transparent text-black px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition flex items-center"
+                >
+                  Discover our services
+                  <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+                <a
+                  href="http://wavformat.vercel.app"
+                  class="text-primary font-semibold hover:underline"
+                  >View Portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -top-6 -left-6 w-24 h-24 bg-black bg-opacity-10 rounded-lg transform rotate-12"
+            ></div>
+            <div
+              class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary bg-opacity-10 rounded-lg transform -rotate-12"
+            ></div>
+            <div
+              class="relative rounded-lg overflow-hidden h-[600px] shadow-2xl"
+            >
+              <img
+                src="st3.jpg"
+                alt=""
+                class="w-full h-full object-cover object-top"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6"
+              >
+                <div class="flex items-center space-x-4">
+                 
+                  <div class="text-white">
+                    <p class="font-bold">Behind The Story!</p>
+                    <p class="text-sm opacity-80">BTS Music Video Shoot, Lagos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 font-['pacifico']">Our Services!</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Comprehensive creative solutions designed to capture the energy of
+            your summer events and brand activations.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-movie-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Content Creation</h3>
+            <p class="text-gray-700">
+              Cinematic video production, creative direction, and custom content
+              packages tailored to your brand's aesthetic and messaging goals.
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-live-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Real-Time Coverage</h3>
+            <p class="text-gray-700">
+              Immediate social media coverage with professional-grade content
+              delivered during your event for maximum engagement.
+            </p>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-film-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Post-Event Media</h3>
+            <p class="text-gray-700">
+              Comprehensive recap videos, highlight reels, and professionally
+              edited content packages delivered within 48-72 hours.
+            </p>
+          </div>
+          <!-- Service 4 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-broadcast-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Livestreams</h3>
+            <p class="text-gray-700">
+              Professional multi-camera livestreaming services with graphic
+              overlays, transitions, and real-time engagement features.
+            </p>
+          </div>
+          <!-- Service 5 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-camera-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Photography</h3>
+            <p class="text-gray-700">
+              Event, portrait, and product photography with same-day delivery
+              options for key images and full galleries within 24 hours.
+            </p>
+          </div>
+          <!-- Service 6 -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-youtube-line ri-2x text-black"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">YouTube DJ Sets</h3>
+            <p class="text-gray-700">
+              Professionally filmed DJ performances with custom visual effects,
+              perfect for artist promotion and brand integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Partner Section -->
+    <section id="why-partner" class="py-20 text-white relative">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="on3.jpg"
+          alt="Partnership Background"
+          class="w-full h-full object-cover object-center"
+        />
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Why Partner With Us</h2>
+          <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+            Strategic benefits that extend beyond traditional media coverage to
+            create lasting impact for your brand.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Benefit 1 -->
+          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-eye-line ri-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Brand Visibility</h3>
+            <p class="text-gray-300">
+              Access to our established audience of over 250,000 followers
+              across platforms, with content that reaches Lagos' most
+              influential youth demographics.
+            </p>
+          </div>
+          <!-- Benefit 2 -->
+          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-movie-2-line ri-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Creative Storytelling</h3>
+            <p class="text-gray-300">
+              Our team crafts narratives that authentically integrate your brand
+              into the cultural conversation, creating emotional connections
+              with audiences.
+            </p>
+          </div>
+          <!-- Benefit 3 -->
+          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-advertisement-line ri-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Branded Content</h3>
+            <p class="text-gray-300">
+              Custom content packages designed specifically for your marketing
+              channels, with formats optimized for each platform and audience
+              segment.
+            </p>
+          </div>
+          <!-- Benefit 4 -->
+          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-folder-transfer-line ri-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Sponsor-Ready Assets</h3>
+            <p class="text-gray-300">
+              High-quality deliverables that can be used for future marketing
+              campaigns, sponsor reports, and case studies to demonstrate ROI.
+            </p>
+          </div>
+        </div>
+        <div class="mt-16 text-center">
+        </div>
+      </div>
+    </section>
+    <!-- Collaboration Models Section -->
+    <section id="models" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-bold mb-4 font-['pacifico']">Collaboration Models!</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Flexible partnership structures designed to accommodate different
+            budgets and objectives.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Model 1 -->
+          <div
+            class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="bg-black bg-opacity- p-6">
+              <h3 class="text-2xl font-bold text-white">Paid Services</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Full creative control over deliverables</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Dedicated production team</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Priority scheduling</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Comprehensive content packages</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Full ownership of content</span>
+                </li>
+              </ul>
+              <div class="text-center">
+                <p class="text-gray-500 mb-4">Starting from</p>
+                <p class="text-3xl font-bold mb-6">₦750,000</p>
+                <a
+                  href="#contact"
+                  class="block bg-green-900 text-white px-8 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
+                  >Get Quote</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Model 2 -->
+          <div
+            class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="bg-black bg-opacity- p-6">
+              <h3 class="text-2xl font-bold text-white">Brand Collabs</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Co-created content strategy</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Shared production costs</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Cross-promotion on our channels</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Integrated brand messaging</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Shared content rights</span>
+                </li>
+              </ul>
+              <div class="text-center">
+                <p class="text-gray-500 mb-4">Flexible structure</p>
+                <p class="text-3xl font-bold mb-6">Custom Pricing</p>
+                <a
+                  href="#contact"
+                  class="block bg-red-900 text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
+                  >Discuss Options</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Model 3 -->
+          <div
+            class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="bg-black p-6">
+              <h3 class="text-2xl font-bold text-white">Media Partnerships</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Official media partner status</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Value-exchange model</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Exclusive content access</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Brand integration opportunities</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-gray-800 mr-2 mt-0.5"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Long-term relationship building</span>
+                </li>
+              </ul>
+              <div class="text-center">
+                <p class="text-gray-500 mb-4">Based on mutual value</p>
+                <p class="text-3xl font-bold mb-6">Send a DM</p>
+                <a
+                  href="#contact"
+                  class="block bg-gray-800 text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 font-['pacifico']">Our Creative Process</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            A streamlined workflow designed to maximize impact while minimizing
+            stress for our partners.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between items-start gap-8"
+        >
+          <!-- Phase 1 -->
+          <div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto"
+            >
+              <span class="font-bold">01</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center">
+              Pre-Event Planning
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Initial consultation & brief development</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Content strategy & shot list creation</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Technical site visit & logistics planning</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Equipment preparation & team briefing</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Phase 2 -->
+          <div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto"
+            >
+              <span class="font-bold">02</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center">
+              Live Event Coverage
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Multi-camera setup & technical checks</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Real-time content capture & editing</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Same-day delivery of key assets</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>On-site direction & brand integration</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Phase 3 -->
+          <div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto"
+            >
+              <span class="font-bold">03</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center">
+              Post-Event Deliverables
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Professional editing & color grading</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Format optimization for all platforms</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Delivery of all agreed assets</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5"
+                >
+                  <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>Performance analytics & recommendations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Our Work</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            A selection of our recent projects showcasing our creative
+            capabilities.
+          </p>
+        </div>
+        <div class="mb-8 flex flex-wrap justify-center gap-4">
+          <button
+            class="portfolio-filter active px-6 py-2 !rounded-button whitespace-nowrap bg-black text-white font-medium"
+            data-filter="all"
+          >
+            All Projects
+          </button>
+          <button
+            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
+            data-filter="events"
+          >
+            Events
+          </button>
+          <button
+            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
+            data-filter="brands"
+          >
+            Brand Campaigns
+          </button>
+          <button
+            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
+            data-filter="artists"
+          >
+            Artist Collaborations
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Gallery Item 1 -->
+          <div
+            class="gallery-item  overflow-hidden shadow-lg"
+            data-category="events"
+          >
+            <img
+              src="on10.jpg"
+              alt="Lagos Summer Festival"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">
+                  Lagos Summer Festival
+                </h4>
+                <p class="text-white text-sm">
+                  Complete event coverage & recap video
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div
+            class="gallery-item rounded-lg  overflow-hidden shadow-lg"
+            data-category="brands"
+          >
+            <img
+              src="on1.jpg"
+              alt="Premium Spirits Brand Activation"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">
+                  Premium Spirits Brand Activation
+                </h4>
+                <p class="text-white text-sm">
+                  Product launch & influencer campaign
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div
+            class="gallery-item overflow-hidden shadow-lg"
+            data-category="artists"
+          >
+            <img
+              src="on11.jpg"
+              alt="Afrobeats Artist Tour"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">
+                  Afrobeats Artist Tour
+                </h4>
+                <p class="text-white text-sm">
+                  Tour documentation & music video
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div
+            class="gallery-item rounded-lg  overflow-hidden shadow-lg"
+            data-category="events"
+          >
+            <img
+              src="on6.jpg"
+              alt="Corporate Yacht Party"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">
+                  Corporate Yacht Party
+                </h4>
+                <p class="text-white text-sm">Executive event coverage</p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 5 -->
+          <div
+            class="gallery-item  overflow-hidden shadow-lg"
+            data-category="brands"
+          >
+            <img
+              src="on4.jpg"
+              alt="Fashion Brand Campaign"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">
+                  Fashion Brand Campaign
+                </h4>
+                <p class="text-white text-sm">Summer collection photoshoot</p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 6 -->
+          <div
+            class="gallery-item rounded-lg overflow-hidden shadow-lg"
+            data-category="artists"
+          >
+            <img
+              src="on7.jpg"
+              alt="DJ YouTube Series"
+              class="w-full h-64 object-cover object-top"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h4 class="text-white font-bold text-xl">DJ YouTube Series</h4>
+                <p class="text-white text-sm">Weekly performance videos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="https://www.instagram.com/thewavformat"
+            class="bg- text-black px-8 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-lg"
+            >See more on our Instagram!</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Client Testimonials</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Hear what our partners have to say about working with The Wave
+            Format Production.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="testimonial-slideflex overflow-x-hidden">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full mr-4 font-bold text-xl"
+                  >
+                    G
+                  </div>
+                  <div>
+                    <h4 class="font-bold"></h4>
+                    <p class="text-gray-600 text-sm">
+                      Marketing Director, Pulse Nigeria
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "wav.format team delivered beyond our expectations for
+                  our summer campaign. Their ability to capture authentic
+                  moments while seamlessly integrating our brand messaging
+                  resulted in our highest-performing content of the year."
+                </p>
+                <div class="flex text-yellow-500">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-secondary text-white rounded-full mr-4 font-bold text-xl"
+                  >
+                    T
+                  </div>
+                  <div>
+                    <h4 class="font-bold"></h4>
+                    <p class="text-gray-600 text-sm">
+                      Festival Director, Lagos Sound Festival
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "Working with wav.format as our official media partner
+                  transformed how we documented our festival. Their team
+                  captured moments we didn't even know were happening, and their
+                  real-time content strategy doubled our social engagement."
+                </p>
+                <div class="flex text-yellow-500">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full mr-4 font-bold text-xl"
+                  >
+                    F
+                  </div>
+                  <div>
+                    <h4 class="font-bold"></h4>
+                    <p class="text-gray-600 text-sm">
+                      Artist Manager, Afrobeats Collective
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "The YouTube series we created with wav.format helped our
+                  artist reach new international audiences. Their production
+                  quality and creative direction elevated our visual identity
+                  and led to multiple brand partnership opportunities."
+                </p>
+                <div class="flex text-yellow-500">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-black mx-1 active"
+            ></button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-6xl font-bold mb-4">Partner With Us</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Ready to elevate your summer presence? Let's discuss how we can
+            collaborate.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <!-- Contact Form -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+            <form id="contact-form">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="company" class="block text-gray-700 mb-2"
+                  >Company / Organization</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Your company"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="phone" class="block text-gray-700 mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Your phone number"
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Interested In</label>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" class="hidden" />
+                    <span class="checkmark"></span>
+                    <span class="ml-7">Paid Services</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" class="hidden" />
+                    <span class="checkmark"></span>
+                    <span class="ml-7">Brand Collaboration</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" class="hidden" />
+                    <span class="checkmark"></span>
+                    <span class="ml-7">Media Partnership</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" class="hidden" />
+                    <span class="checkmark"></span>
+                    <span class="ml-7">Not Sure Yet</span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Tell Us About Your Project</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Event details, dates, goals, etc."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
+              >
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <div
+              class="bg-yellow-900 text-white p-8 rounded-lg shadow-lg mb-8 grain-overlay"
+            >
+              <h3 class="text-2xl font-bold mb-6">Quick Connect</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
+                  >
+                    <i class="ri-whatsapp-line ri-lg text-black"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1 text-black">WhatsApp</h4>
+                    <p class="text-black">
+                      Get a quick response via WhatsApp
+                    </p>
+                    <a
+                      href="#"
+                      class="text-white font-medium mt-2 inline-block"
+                      >Message Us</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
+                  >
+                    <i class="ri-mail-line ri-lg text-black"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1 text-black">Email</h4>
+                    <p class="text-black">partnerships@wav.format.com</p>
+                    <a
+                      href="mailto:partnerships@wav.format.com"
+                      class="text-white font-medium mt-2 inline-block"
+                      >Send Email</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
+                  >
+                    <i class="ri-map-pin-line ri-lg text-black"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1 text-black">Studio Location</h4>
+                    <p class="text-black">Victoria Island, Lagos, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-bold mb-6">Summer 2025 Availability</h3>
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="font-medium">June 2025</span>
+                  <span
+                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                    >10% Available</span
+                  >
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-green-500 h-2 rounded-full"
+                    style="width: 10%"
+                  ></div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <span class="font-medium">July 2025</span>
+                  <span
+                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm"
+                    >40% Available</span
+                  >
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-yellow-500 h-2 rounded-full"
+                    style="width: 40%"
+                  ></div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <span class="font-medium">August 2025</span>
+                  <span
+                    class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm"
+                    >85% Available</span
+                  >
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-red-500 h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <span class="font-medium">September 2025</span>
+                  <span
+                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                    >70% Available</span
+                  >
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-blue-500 h-2 rounded-full"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <p class="text-gray-700 text-sm">
+                  Early booking is recommended for prime weekend dates. Priority
+                  booking available for recurring partnerships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+           <a href="http://wav.format.vercel.app"><div class="text-2xl font-['Montserrat'] mb-4">wav.format</div></a> 
+            <p class="text-gray-400 mb-6">
+              Capturing the pulse of Lagos' creative culture through immersive
+              visual storytelling.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-primary transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-primary transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-gray-400 hover:text-primary transition"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-400 hover:text-primary transition"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-primary transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary transition"
+                  >Content Creation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary transition"
+                  >Event Coverage</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary transition"
+                  >Brand Campaigns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary transition"
+                  >Artist Collaborations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-primary transition"
+                  >YouTube Production</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="text-gray-400"
+                  >Lekki Phase one, Lagos, Nigeria</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span class="text-gray-400">info@wav.format.com</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
+                >
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span class="text-gray-400">+234 800 123 4567</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 wav.format Production. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition text-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition text-sm"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition text-sm"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="navbar-scroll">
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            navbar.classList.add("bg-white", "shadow-lg");
+            navbar.classList.remove("bg-transparent");
+            // Change text color
+            const navLinks = navbar.querySelectorAll("a:not(.bg-primary)");
+            navLinks.forEach((link) => {
+              link.classList.remove("text-white");
+              link.classList.add("text-gray-800");
+            });
+            // Change logo color
+            const logo = navbar.querySelector(".font-['Pacifico']");
+            logo.classList.remove("text-white");
+            logo.classList.add("text-gray-800");
+            // Change mobile menu button color
+            const menuButton = document.getElementById("mobile-menu-button");
+            menuButton.classList.remove("text-white");
+            menuButton.classList.add("text-gray-800");
+          } else {
+            navbar.classList.remove("bg-white", "shadow-lg");
+            navbar.classList.add("bg-transparent");
+            // Change text color back
+            const navLinks = navbar.querySelectorAll("a:not(.bg-primary)");
+            navLinks.forEach((link) => {
+              link.classList.remove("text-gray-800");
+              link.classList.add("text-white");
+            });
+            // Change logo color back
+            const logo = navbar.querySelector(".font-['Pacifico']");
+            logo.classList.remove("text-gray-800");
+            logo.classList.add("text-white");
+            // Change mobile menu button color back
+            const menuButton = document.getElementById("mobile-menu-button");
+            menuButton.classList.remove("text-gray-800");
+            menuButton.classList.add("text-white");
+          }
+        });
+      });
+    </script>
+    <script id="mobile-menu">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+        const closeMenuButton = document.getElementById("close-mobile-menu");
+
+        function openMenu() {
+          mobileMenu.classList.remove("translate-x-full");
+          mobileMenuOverlay.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+          setTimeout(() => {
+            mobileMenuOverlay.classList.remove("opacity-0");
+          }, 50);
+        }
+
+        function closeMenu() {
+          mobileMenu.classList.add("translate-x-full");
+          mobileMenuOverlay.classList.add("opacity-0");
+          document.body.style.overflow = "";
+          setTimeout(() => {
+            mobileMenuOverlay.classList.add("hidden");
+          }, 300);
+        }
+
+        mobileMenuButton.addEventListener("click", openMenu);
+        closeMenuButton.addEventListener("click", closeMenu);
+        mobileMenuOverlay.addEventListener("click", closeMenu);
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        // Handle resize events
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 768) {
+            closeMenu();
+          }
+        });
+      });
+    </script>
+    <script id="portfolio-filter">
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".portfolio-filter");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("active", "bg-primary", "text-white");
+              btn.classList.add("bg-gray-200", "text-gray-800");
+            });
+            // Add active class to clicked button
+            this.classList.add("active", "bg-primary", "text-white");
+            this.classList.remove("bg-gray-200", "text-gray-800");
+            const filter = this.getAttribute("data-filter");
+            galleryItems.forEach((item) => {
+              if (filter === "all" || item.getAttribute("data-category") === filter) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <script id="testimonial-slider">
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".testimonial-slider");
+        const dots = document.querySelectorAll(".testimonial-dot");
+        const testimonials = document.querySelectorAll(".testimonial-card");
+        const testimonialWidth = 100; // percentage
+        let currentIndex = 0;
+        // Set initial position
+        updateSlider();
+        // Handle dot clicks
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateSlider();
+          });
+        });
+        function updateSlider() {
+          // Update slider position
+          slider.style.transform = `translateX(-${currentIndex * testimonialWidth}%)`;
+          // Update dots
+          dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+              dot.classList.add("active", "bg-primary");
+              dot.classList.remove("bg-gray-300");
+            } else {
+              dot.classList.remove("active", "bg-primary");
+              dot.classList.add("bg-gray-300");
+            }
+          });
+        }
+        // Auto slide
+        let interval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % testimonials.length;
+          updateSlider();
+        }, 5000);
+        // Pause on hover
+        slider.addEventListener("mouseenter", () => {
+          clearInterval(interval);
+        });
+        slider.addEventListener("mouseleave", () => {
+          interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateSlider();
+          }, 5000);
+        });
+      });
+    </script>
+    <script id="form-handler">
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contact-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Get form values
+          const name = document.getElementById("name").value;
+          const company = document.getElementById("company").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const message = document.getElementById("message").value;
+          // Basic validation
+          if (!name || !email || !message) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+          // Simulate form submission
+          const submitButton = form.querySelector('button[type="submit"]');
+          submitButton.innerHTML = "Sending...";
+          submitButton.disabled = true;
+          // Simulate API call
+          setTimeout(() => {
+            // Reset form
+            form.reset();
+            // Show success message
+            alert(
+              "Thank you for your inquiry! We will get back to you within 24 hours.",
+            );
+            // Reset button
+            submitButton.innerHTML = "Submit Inquiry";
+            submitButton.disabled = false;
+          }, 1500);
+        });
+        // Custom checkbox functionality
+        const checkboxes = document.querySelectorAll(".custom-checkbox input");
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            // Additional functionality can be added here if needed
+          });
+        });
+      });
+    </script>
+    <script id="smooth-scroll">
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const offsetTop =
+                targetElement.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
