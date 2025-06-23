@@ -1,25 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TheWavFormat</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheWavFormat</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
       tailwind.config = {
         theme: {
           extend: {
@@ -40,7 +32,7 @@
         },
       };
     </script>
-    <style>
+<style>
       :where([class^="ri-"])::before { content: "\f3c2"; }
       body {
       font-family: 'Montserrat', sans-serif;
@@ -209,723 +201,751 @@
       transform: rotate(45deg);
       }
     </style>
-  </head>
-  <body class="bg-white">
-    <!-- Navigation -->
-    <nav
-      class="fixed top-0 left-0 w-full bg-transparent z-50 transition-all duration-300"
-      id="navbar"
-    >
-      <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
-      >
-      <a href="http://wavformat.vercel.app"><div class="text-white text-2xl font-['Montserrat']"><img src="wav.png" style="width: 100%; max-width: 150px; height: auto;">
-</div></a>  <div class="text-white text-2xl font-['Montserrat']"></div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#about" class="text-white hover:text-primary font-medium"
-            >About</a
-          >
-          <a href="#services" class="text-white hover:text-primary font-medium"
-            >Services</a
-          >
-          <a href="#models" class="text-white hover:text-primary font-medium"
-            >Collaboration</a
-          >
-          <a href="#portfolio" class="text-white hover:text-primary font-medium"
-            >Portfolio</a
-          >
-    
-        </div>
-        <div class="hidden md:block">
-          <a
-            href="#contact"
-            class="text-3xl text-white px-6 py-2 font-['pacifico'] !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
-            >Contact Us</a
-          >
-        </div>
-        <div
-          class="md:hidden w-10 h-10 flex items-center justify-center text-white"
-          id="mobile-menu-button"
-        >
-          <i class="ri-menu-line ri-2x"></i>
-        </div>
-      </div>
-      <div
-        class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden transition-opacity duration-300"
-        id="mobile-menu-overlay"
-      ></div>
-      <div
-        class="md:hidden fixed right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50"
-        id="mobile-menu"
-      >
-        <div class="p-6">
-          <div class="flex justify-between items-center mb-8">
-            <span class="text-xl font-['Pacifico'] text-primary"></span>
-            <button
-              id="close-mobile-menu"
-              class="text-gray-500 hover:text-gray-700"
-            >
-              <i class="ri-close-line ri-2x"></i>
-            </button>
-          </div>
-          <div class="space-y-6">
-            <div>
-              <h3 class="text-sm font-semibold font-['Pacifico'] text-red-400 mb-3"></h3>
-              <ul class="space-y-4">
-                <li>
-                  <a
-                    href="#about"
-                    class="flex items-center font-['Pacifico'] text-red-800 hover:text-primary"
-                  >
-                    <i class="ri-information-line mr-3"></i>
-                    <span>About Us</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#services"
-                    class="flex items-center font-['Pacifico'] text-red-800 hover:text-primary"
-                  >
-                    <i class="ri-service-line mr-3"></i>
-                    <span>Our Services</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="pt-6 border-t border-gray-100">
-              <a
-                href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                class="block bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-center"
-              >
-                <i class="ri-chat-1-line mr-2"></i>Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero-video-container flex items-center justify-center">
-      <div
-        style="background-image: url('sum2.jpeg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"
-      ></div>
-      <div class="hero-content container mx-auto px-4 text-center">
-        <h1
-          class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-['pacifico'] text-white leading-tight mb-6"
-        >
-          Summer through<br class="hidden md:block" /><img src="wav2.png" style="display: block; margin: 0 auto; width: 300px; height: auto;">
 
- <div class="font-['Montserrat']">
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&amp;family=Fascinate+Inline&amp;family=Major+Mono+Display&amp;family=Barrio&amp;family=Festive&amp;family=Delius+Unicase&amp;family=Offside&amp;family=Syne+Mono&amp;family=Rubik+Iso&amp;family=Press+Start+2P&amp;family=Rubik+Glitch&amp;family=Megrim&amp;family=Nosifer&amp;family=Ole&amp;family=Moo+Lah+Lah&amp;family=Snowburst+One&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-white">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-transparent z-50 transition-all duration-300" id="navbar">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<a href="http://wavformat.vercel.app"><div class="text-white text-2xl font-['Montserrat']"><img src="wav.png" style="width: 100%; max-width: 150px; height: auto;"/>
+</div></a> <div class="text-white text-2xl font-['Montserrat']"></div>
+<div class="hidden md:flex space-x-8">
+<a class="text-white hover:text-primary text-3xl 	font-['Ole'] font-medium" href="#about">About</a>
+<a class="text-white hover:text-primary text-3xl 	font-['Ole'] font-medium" href="#services">Services</a>
+<a class="text-white hover:text-primary text-3xl 	font-['Ole'] font-medium" href="#models">Collaboration</a>
+<a class="text-white hover:text-primary text-3xl  	font-['Ole'] font-medium" href="#portfolio">Portfolio</a>
 </div>
-          
-        </h1>
-        <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto">
+<div class="hidden md:block">
+<a class="text-4xl text-white px-6 py-2 	font-['Ole'] !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition" href="#contact">Contact Us</a>
+</div>
+<div class="md:hidden w-10 h-10 flex items-center justify-center text-white" id="mobile-menu-button">
+<i class="ri-menu-line ri-2x"></i>
+</div>
+</div>
+<div class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden transition-opacity duration-300" id="mobile-menu-overlay"></div>
+<div class="md:hidden fixed right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50" id="mobile-menu">
+<div class="p-6">
+<div class="flex justify-between items-center mb-8">
+<span class="text-xl font-['Pacifico'] text-primary"></span>
+<button class="text-gray-500 hover:text-gray-700" id="close-mobile-menu">
+<i class="ri-close-line ri-2x"></i>
+</button>
+</div>
+<div class="space-y-6">
+<div>
+<h3 class="text-sm font-semibold font-['Pacifico'] text-red-400 mb-3"></h3>
+<ul class="space-y-4">
+<li>
+<a class="flex items-center 	font-['Ole'] text-red-800 hover:text-primary" href="#about">
+<i class="ri-information-line mr-3"></i>
+<span>About Us</span>
+</a>
+</li>
+<li>
+<a class="flex items-center 	font-['Ole'] text-red-800 hover:text-primary" href="#services">
+<i class="ri-service-line mr-3"></i>
+<span>Our Services</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="pt-6 border-t border-gray-100">
+<a class="block bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-center" href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==">
+<i class="ri-chat-1-line mr-2"></i>Contact Us
+              </a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-video-container flex items-center justify-center">
+<div style="background-image: url('sun11.jpg'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+<div class="hero-content container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold 	font-['Delius_Unicase'] text-white leading-tight mb-6">
+          Summer through<br class="hidden md:block"/><img src="wav2.png" style="display: block; margin: 0 auto; width: 300px; height: auto;"/>
+
+</h1>
+<p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto 	font-['Major_Mono_Display']">
           Elevate your brand presence during Lagos' most vibrant season.
-          <br class="hidden md:block" />
+          <br class="hidden md:block"/>
           June - September 2025
         </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-         
-          <a
-            href="https://www.instagram.com/thewavformat"
-            class="bg-transparent text-white px-2 py-3 text-3xl font-['Montserrat'] !rounded-button whitespace-nowrap font-semibold hover:bg-transparent transition text2g"
-            ></a
-          >
-        </div>
-      </div>
-      <div
-        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white scroll-indicator"
-      >
-        <div class="w-8 h-8 flex items-center justify-center">
-          <i class="ri-arrow-down-line ri-xl"></i>
-        </div>
-      </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">TheWavFormat Production</h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-transparent text-white px-2 py-3 text-3xl font-['Montserrat'] !rounded-button whitespace-nowrap font-semibold hover:bg-transparent transition text2g" href="https://www.instagram.com/thewavformat"></a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white scroll-indicator">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-line ri-xl"></i>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-bold mb-4 	font-['Barrio']">TheWavFormat Production</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto font-['Delius_Unicase']">
             We are Lagos' premier creative agency specializing in capturing the
             pulse of youth culture through immersive content creation and event
             coverage. Since 2018, we've been documenting Nigeria's vibrant
             cultural landscape, working with leading brands and artists to
             create authentic connections.
           </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <div class="space-y-8">
-              <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
-                <h3 class="text-2xl font-bold mb-4">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<div class="space-y-8">
+<div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+<h3 class="text-2xl font-bold mb-4 	font-['Offside']">
                   Our Summer 2025 Initiative
                 </h3>
-                <p class="text-gray-700">
+<p class="text-gray-700 font-['Delius_Unicase']">
                   As Lagos comes alive during the summer months, we're offering
                   exclusive partnership opportunities for brands, events,
                   festivals, and artists looking to make a lasting impact on
                   Nigeria's creative scene.
                 </p>
-              </div>
-              <div class="grid grid-cols-2 gap-6">
-                <div class="bg-black bg-opacity-5 p-6 rounded-lg">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4"
-                  >
-                    <i class="ri-award-line text-black text-xl"></i>
-                  </div>
-                  <h4 class="font-bold mb-2">3+ Years</h4>
-                  <p class="text-gray-600 text-sm">Industry Experience</p>
-                </div>
-                <div class="bg-black bg-opacity-5 p-6 rounded-lg">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4"
-                  >
-                    <i class="ri-team-line text-black text-xl"></i>
-                  </div>
-                  <h4 class="font-bold mb-2">50+ Clients</h4>
-                  <p class="text-gray-600 text-sm">Successful Projects</p>
-                </div>
-              </div>
-              <div class="bg-gray-50 p-6 rounded-lg">
-                <h4 class="font-bold mb-3 text-3xl">Our Creative Team.</h4>
-                <p class="text-gray-700 mb-4">
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-black bg-opacity-5 p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4">
+<i class="ri-award-line text-black text-xl"></i>
+</div>
+<h4 class="font-bold mb-2">3+ Years</h4>
+<p class="text-gray-600 text-sm">Industry Experience</p>
+</div>
+<div class="bg-black bg-opacity-5 p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-4">
+<i class="ri-team-line text-black text-xl"></i>
+</div>
+<h4 class="font-bold mb-2">50+ Clients</h4>
+<p class="text-gray-600 text-sm">Successful Projects</p>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<h4 class="font-bold mb-3 text-3xl 	font-['Offside']">Our Creative Team.</h4>
+<p class="text-gray-700 mb-4 font-['Delius_Unicase']">
                   Our team of directors, photographers, and content creators are
                   ready to transform your summer activations into compelling
                   visual stories that resonate with audiences across platforms.
                 </p>
-                <div class="flex -space-x-3">
-                  <div
-                    class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold text-sm"
-                  >
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold text-sm">
                     BX
                   </div>
-                  <div
-                    class="w-10 h-10 rounded-full bg-red-900 text-white flex items-center justify-center font-bold text-sm"
-                  >
+<div class="w-10 h-10 rounded-full bg-red-900 text-white flex items-center justify-center font-bold text-sm">
                     HS
                   </div>
-                  <div
-                    class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center font-bold text-sm"
-                  >
+<div class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center font-bold text-sm">
                     TW
                   </div>
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm"
-                  >
+<div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">
                     +20
                   </div>
-                </div>
-              </div>
-              <div
-                class="flex items-center justify-between bg-gray-50 p-6 rounded-lg"
-              >
-                <a
-                  href="#services"
-                  class="bg-transparent text-black px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition flex items-center"
-                >
+</div>
+</div>
+<div class="flex items-center justify-between bg-gray-50 p-6 rounded-lg">
+<a class="bg-transparent text-black px-6 py-3 text-2xl 	font-['Megrim'] !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition flex items-center" href="#services">
                   Discover our services
                   <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-                <a
-                  href="http://wavformat.vercel.app"
-                  class="text-primary font-semibold hover:underline"
-                  >View Portfolio</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="relative">
-            <div
-              class="absolute -top-6 -left-6 w-24 h-24 bg-black bg-opacity-10 rounded-lg transform rotate-12"
-            ></div>
-            <div
-              class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary bg-opacity-10 rounded-lg transform -rotate-12"
-            ></div>
-            <div
-              class="relative rounded-lg overflow-hidden h-[600px] shadow-2xl"
-            >
-              <img
-                src="st3.jpg"
-                alt=""
-                class="w-full h-full object-cover object-top"
-              />
-              <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6"
-              >
-                <div class="flex items-center space-x-4">
-                 
-                  <div class="text-white">
-                    <p class="font-bold">Timaya's Video Shoot</p>
-                    <p class="text-sm opacity-80">Music Video Shoot, Lagos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-6xl font-bold mb-4 font-['pacifico']">What we bring <br> to the table!</h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+</a>
+<a class="text-primary font-semibold text-2xl 	font-['Megrim'] hover:underline" href="http://wavformat.vercel.app">View Portfolio</a>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-24 h-24 bg-black bg-opacity-10 rounded-lg transform rotate-12"></div>
+<div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary bg-opacity-10 rounded-lg transform -rotate-12"></div>
+<div class="relative rounded-lg overflow-hidden h-[600px] shadow-2xl">
+<img alt="" class="w-full h-full object-cover object-top" src="st3.jpg">
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+<div class="flex items-center space-x-4">
+<div class="text-white">
+<p class="font-bold">Timaya's Video Shoot</p>
+<p class="text-sm opacity-80">Music Video Shoot, Lagos.</p>
+</div>
+</div>
+</div>
+</img></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-20 bg-white" id="services">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4 font-['Major_Mono_Display']">What we bring <br/> to the table!</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto font-['Offside']">
             Comprehensive creative solutions designed to capture the energy of
             your summer events and brand activations.
           </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Service 1 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-movie-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Pre Event</h3>
-            <p class="text-gray-700">
-              Hype Campaign <br> Influencer buzz <br> Countdown content
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-1xl text-black 	font-['Syne_Mono']">
+<!-- Service 1 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-movie-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Pre Event</h3>
+<p class="text-gray-700">
+              Hype Campaign <br/> Influencer buzz <br/> Countdown content
             </p>
-          </div>
-          <!-- Service 2 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-live-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">On-Site</h3>
-            <p class="text-gray-700">
-              Live Social Covergae <br> Photo/Video Covergae <br>Interactive Media Booths or Experiences
+</div>
+<!-- Service 2 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-live-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">On-Site</h3>
+<p class="text-gray-700">
+              Live Social Covergae <br/> Photo/Video Covergae <br/>Interactive Media Booths or Experiences
             </p>
-          </div>
-          <!-- Service 3 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-film-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Post-Event</h3>
-            <p class="text-gray-700">
-              Recap Videos <br> Attendee Testimonials <br>Creative Content Recap for your Sponsors <br>Media PArtnership <br>Paid Services <br>Brand Collaborations
+</div>
+<!-- Service 3 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-film-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Post-Event</h3>
+<p class="text-gray-700">
+              Recap Videos <br/> Attendee Testimonials <br/>Creative Content Recap for your Sponsors <br/>Media PArtnership <br/>Paid Services <br/>Brand Collaborations
             </p>
-          </div>
-          <!-- Service 4 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-broadcast-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Livestreams</h3>
-            <p class="text-gray-700">
+</div>
+<!-- Service 4 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-broadcast-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Livestreams</h3>
+<p class="text-gray-700">
               Professional multi-camera livestreaming services with graphic
               overlays, transitions, and real-time engagement features.
             </p>
-          </div>
-          <!-- Service 5 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-camera-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Photography</h3>
-            <p class="text-gray-700">
+</div>
+<!-- Service 5 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-camera-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Photography</h3>
+<p class="text-gray-700">
               Event, portrait, and product photography with same-day delivery
               options for key images and full galleries within 24 hours.
             </p>
-          </div>
-          <!-- Service 6 -->
-          <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6"
-            >
-              <i class="ri-youtube-line ri-2x text-black"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">YouTube DJ Sets</h3>
-            <p class="text-gray-700">
+</div>
+<!-- Service 6 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-black bg-opacity-10 rounded-full mb-6">
+<i class="ri-youtube-line ri-2x text-black"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">YouTube DJ Sets</h3>
+<p class="text-gray-700">
               Professionally filmed DJ performances with custom visual effects,
               perfect for artist promotion and brand integration.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Why Partner Section -->
-    <section id="why-partner" class="py-20 text-white relative">
-      <div class="absolute inset-0 z-0">
-        <img
-          src="on3.jpg"
-          alt="Partnership Background"
-          class="w-full h-full object-cover object-center"
-        />
-        <div class="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
-      </div>
-      <div class="container mx-auto px-4 relative z-10">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Why Partner With Us</h2>
-          <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+</div>
+</div>
+</div>
+</section>
+<!-- Why Partner Section -->
+<section class="py-20 text-white relative" id="why-partner">
+<div class="absolute inset-0 z-0">
+<img alt="Partnership Background" class="w-full h-full object-cover object-center" src="on3.jpg">
+<div class="absolute inset-0 bg-black bg-opacity-90"></div>
+</img></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-7xl font-bold mb-4 font-['Rubik_Iso']">Why Partner With Us</h2>
+<p class="text-lg text-gray-300 max-w-3xl mx-auto font-['Syne_Mono']">
             Strategic benefits that extend beyond traditional media coverage to
             create lasting impact for your brand.
           </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Benefit 1 -->
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-eye-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Amplify Your Reach</h3>
-            <p class="text-gray-300">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-['Syne_Mono']">
+<!-- Benefit 1 -->
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-eye-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Amplify Your Reach</h3>
+<p class="text-gray-300">
               Access to our established audience
               across platforms, with content that reaches Lagos' most
               influential youth demographics.
             </p>
-          </div>
-          <!-- Benefit 2 -->
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-movie-2-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Elevate Creative Output</h3>
-            <p class="text-gray-300">
+</div>
+<!-- Benefit 2 -->
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-movie-2-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Elevate Creative Output</h3>
+<p class="text-gray-300">
               Our team crafts narratives that authentically integrate your brand
               into the cultural conversation, creating emotional connections
               with audiences.
             </p>
-          </div>
-
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-movie-2-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Elevate Brand Identity</h3>
-            <p class="text-gray-300">
+</div>
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-movie-2-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Elevate Brand Identity</h3>
+<p class="text-gray-300">
               Our team crafts narratives that authentically integrate your brand
               into the cultural conversation, creating emotional connections
               with audiences.
             </p>
-          </div>
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-movie-2-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Documentation of Assets</h3>
-            <p class="text-gray-300">
+</div>
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-movie-2-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Documentation of Assets</h3>
+<p class="text-gray-300">
               Our team crafts narratives that authentically integrate your brand
               into the cultural conversation, creating emotional connections
               with audiences.
             </p>
-          </div>
-          
-          
-          <!-- Benefit 3 -->
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-advertisement-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Maximize Engagements</h3>
-            <p class="text-gray-300">
+</div>
+<!-- Benefit 3 -->
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-advertisement-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Maximize Engagements</h3>
+<p class="text-gray-300">
               Custom content packages designed specifically for your marketing
               channels, with formats optimized for each platform and audience
               segment.
             </p>
-          </div>
-          <!-- Benefit 4 -->
-          <div class="benefit-card bg-gray-800 p-8 rounded-lg">
-            <div
-              class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6"
-            >
-              <i class="ri-folder-transfer-line ri-xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Drive Ticket Sales And Last Minute Attendance</h3>
-            <p class="text-gray-300">
+</div>
+<!-- Benefit 4 -->
+<div class="benefit-card bg-black p-8 rounded-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-yellow-400 bg-opacity-20 rounded-full mb-6">
+<i class="ri-folder-transfer-line ri-xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Drive Ticket Sales And Last Minute Attendance</h3>
+<p class="text-gray-300">
               High-quality deliverables that can be used for future marketing
               campaigns, sponsor reports, and case studies to demonstrate ROI.
             </p>
-          </div>
-        </div>
-
-        
-        
-        <div class="mt-16 text-center">
-        </div>
-      </div>
-    </section>
-    <!-- Collaboration Models Section (Updated) -->
-<section id="models" class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-5xl font-bold mb-4 font-['Pacifico']">Collaboration Models!</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-        Flexible partnership structures designed to accommodate different budgets and objectives.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Paid Services -->
-      <div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
-        <div class="bg-black p-6">
-          <h3 class="text-2xl font-bold text-white">Paid Services (Subscribing to our Flexible Packages)</h3>
-        </div>
-        <div class="p-6">
-          <ul class="space-y-4 mb-8">
-            <li>Real-time event coverage (doors open, fire moments, guests, ticket slash)</li>
-            <li>Live editing included</li>
-            <li>Post-event documentation (wrap-up summary content)</li>
-            <li>Photography (pictures of event)</li>
-            <li>YouTube DJ Set (live show)</li>
-            <li>Content creation: fit check, sign-out, rage booth, 360, interviews</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Brand Collaborations -->
-      <div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
-        <div class="bg-black p-6">
-          <h3 class="text-2xl font-bold text-white">Brand Collaborations (Activation Zones, Branded Content, etc.)</h3>
-        </div>
-        <div class="p-6">
-          <ul class="space-y-4 mb-8">
-            <li>Activation zone setup</li>
-            <li>Branded content creation</li>
-            <li>Branded recap videos</li>
-            <li>Influencer-based on-site seeding</li>
-            <li>Digital campaign synergy</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Media Partnership -->
-      <div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
-        <div class="bg-black p-6">
-          <h3 class="text-2xl font-bold text-white">Media Partnership (Content in exchange for <br> access/sponsorship/ <br> publication)</h3>
-          <p class="text-white mt-2 text-sm">We have different types of deliverables</p>
-        </div>
-        <div class="p-6">
-          <ul class="space-y-4 mb-8">
-            <li>Real-time coverage + live editing</li>
-            <li>Post-event documentation</li>
-            <li>Photography</li>
-            <li>YouTube DJ Set</li>
-            <li>Creative content recap: fit checks, rage, 360, interviews</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+<div class="mt-16 text-center">
+</div>
+</div>
 </section>
-
-    <!-- Portfolio Gallery -->
-    <section id="portfolio" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Our Work</h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            A selection of our recent projects showcasing our creative
+<!-- Collaboration Models Section -->
+<section class="py-20 bg-white" id="models">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4 	font-['Nosifer']">Collaboration Models</h2>
+<!-- <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Flexible partnership structures designed to accommodate different
+            budgets and objectives.
+          </p> -->
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Model 1 -->
+<div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+<div class="bg-black bg-opacity- p-6">
+<h3 class="text-2xl font-bold text-white">Media Partnership (Content in Exchange for Access/Sponsorship)</h3>
+</div>
+<div class="p-6">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Full creative control over deliverables</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Dedicated production team</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Priority scheduling</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Comprehensive content packages</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Full ownership of content</span>
+</li>
+</ul>
+<div class="text-center">
+<p class="text-gray-500 mb-4">Starting from</p>
+<p class="text-3xl font-bold mb-6">₦750,000</p>
+<a class="block bg-green-900 text-white px-8 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition" href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==">Get Quote</a>
+</div>
+</div>
+</div>
+<!-- Model 2 -->
+<div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+<div class="bg-black bg-opacity- p-6">
+<h3 class="text-2xl font-bold text-white">Paid Services (Flexible Package)</h3>
+</div>
+<div class="p-6">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Co-created content strategy</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Shared production costs</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Cross-promotion on our channels</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Integrated brand messaging</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Shared content rights</span>
+</li>
+</ul>
+<div class="text-center">
+<p class="text-gray-500 mb-4">Flexible structure</p>
+<p class="text-3xl font-bold mb-6">Custom Pricing</p>
+<a class="block bg-red-900 text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition" href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==">Discuss Options</a>
+</div>
+</div>
+</div>
+<!-- Model 3 -->
+<div class="collab-card bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
+<div class="bg-black p-6">
+<h3 class="text-2xl font-bold text-white">Brand Collaborations (Activation Zones , Branded COntent, etc.)</h3>
+</div>
+<div class="p-6">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Official media partner status</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Value-exchange model</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Exclusive content access</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Brand integration opportunities</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-gray-800 mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span>Long-term relationship building</span>
+</li>
+</ul>
+<div class="text-center">
+<p class="text-gray-500 mb-4">Based on mutual value</p>
+<p class="text-3xl font-bold mb-6">Send a DM</p>
+<a class="block bg-gray-800 text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition" href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==">Apply Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-20 bg-black">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl text-white font-bold mb-4 font-['Press_Start_2P']">Our Creative <br> Process</h2>
+<!-- <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            A streamlined workflow designed to maximize impact while minimizing
+            stress for our partners.
+          </p> -->
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start gap-8">
+<!-- Phase 1 -->
+<div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto">
+<span class="font-bold">01</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">
+              Pre-Event Planning
+            </h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Initial consultation &amp; brief development</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Content strategy &amp; shot list creation</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Technical site visit &amp; logistics planning</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Equipment preparation &amp; team briefing</span>
+</li>
+</ul>
+</div>
+<!-- Phase 2 -->
+<div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto">
+<span class="font-bold">02</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">
+              Live Event Coverage
+            </h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Multi-camera setup &amp; technical checks</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Real-time content capture &amp; editing</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Same-day delivery of key assets</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>On-site direction &amp; brand integration</span>
+</li>
+</ul>
+</div>
+<!-- Phase 3 -->
+<div class="timeline-item flex-1 bg-white p-8 rounded-lg shadow-lg">
+<div class="w-14 h-14 flex items-center justify-center bg-black text-white rounded-full mb-6 mx-auto">
+<span class="font-bold">03</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">
+              Post-Event Deliverables
+            </h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Professional editing &amp; color grading</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Format optimization for all platforms</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Delivery of all agreed assets</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-black mr-2 mt-0.5">
+<i class="ri-checkbox-circle-line"></i>
+</div>
+<span>Performance analytics &amp; recommendations</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="py-20 bg-white" id="portfolio">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4"></h2>
+<p class="text-black font-['Offside'] text-3xl">
+            A selection of our recent projects showcasing <br> our creative
             capabilities.
           </p>
-        </div>
-        <div class="mb-8 flex flex-wrap justify-center gap-4">
-          <button
-            class="portfolio-filter active px-6 py-2 !rounded-button whitespace-nowrap bg-black text-white font-medium"
-            data-filter="all"
-          >
+</div>
+<div class="mb-8 flex flex-wrap justify-center gap-4">
+<button class="portfolio-filter active px-6 py-2 !rounded-button whitespace-nowrap bg-black text-white font-medium" data-filter="all">
             All Projects
           </button>
-          <button
-            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
-            data-filter="events"
-          >
+<button class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium" data-filter="events">
             Events
           </button>
-          <button
-            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
-            data-filter="brands"
-          >
+<button class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium" data-filter="brands">
             Brand Campaigns
           </button>
-          <button
-            class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium"
-            data-filter="artists"
-          >
+<button class="portfolio-filter px-6 py-2 !rounded-button whitespace-nowrap bg-gray-200 text-gray-800 font-medium" data-filter="artists">
             Artist Collaborations
           </button>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Gallery Item 1 -->
-          <div
-            class="gallery-item  overflow-hidden shadow-lg"
-            data-category="events"
-          >
-            <img
-              src="on10.jpg"
-              alt="Lagos Summer Festival"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Gallery Item 1 -->
+<div class="gallery-item overflow-hidden shadow-lg" data-category="events">
+<img alt="Lagos Summer Festival" class="w-full h-64 object-cover object-top" src="on10.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">
                   Lagos Summer Festival
                 </h4>
-                <p class="text-white text-sm">
-                  Complete event coverage & recap video
+<p class="text-white text-sm">
+                  Complete event coverage &amp; recap video
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery Item 2 -->
-          <div
-            class="gallery-item rounded-lg  overflow-hidden shadow-lg"
-            data-category="brands"
-          >
-            <img
-              src="on1.jpg"
-              alt="Premium Spirits Brand Activation"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">
+</div>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="brands">
+<img alt="Premium Spirits Brand Activation" class="w-full h-64 object-cover object-top" src="on1.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">
                   Premium Spirits Brand Activation
                 </h4>
-                <p class="text-white text-sm">
-                  Product launch & influencer campaign
+<p class="text-white text-sm">
+                  Product launch &amp; influencer campaign
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery Item 3 -->
-          <div
-            class="gallery-item overflow-hidden shadow-lg"
-            data-category="artists"
-          >
-            <img
-              src="on11.jpg"
-              alt="Afrobeats Artist Tour"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">
+</div>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="gallery-item overflow-hidden shadow-lg" data-category="artists">
+<img alt="Afrobeats Artist Tour" class="w-full h-64 object-cover object-top" src="on11.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">
                   Afrobeats Artist Tour
                 </h4>
-                <p class="text-white text-sm">
-                  Tour documentation & music video
+<p class="text-white text-sm">
+                  Tour documentation &amp; music video
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery Item 4 -->
-          <div
-            class="gallery-item rounded-lg  overflow-hidden shadow-lg"
-            data-category="events"
-          >
-            <img
-              src="on6.jpg"
-              alt="Corporate Yacht Party"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">
+</div>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="events">
+<img alt="Corporate Yacht Party" class="w-full h-64 object-cover object-top" src="on6.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">
                   Corporate Yacht Party
                 </h4>
-                <p class="text-white text-sm">Executive event coverage</p>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery Item 5 -->
-          <div
-            class="gallery-item  overflow-hidden shadow-lg"
-            data-category="brands"
-          >
-            <img
-              src="on4.jpg"
-              alt="Fashion Brand Campaign"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">
+<p class="text-white text-sm">Executive event coverage</p>
+</div>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="gallery-item overflow-hidden shadow-lg" data-category="brands">
+<img alt="Fashion Brand Campaign" class="w-full h-64 object-cover object-top" src="on4.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">
                   Fashion Brand Campaign
                 </h4>
-                <p class="text-white text-sm">Summer collection photoshoot</p>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery Item 6 -->
-          <div
-            class="gallery-item rounded-lg overflow-hidden shadow-lg"
-            data-category="artists"
-          >
-            <img
-              src="on7.jpg"
-              alt="DJ YouTube Series"
-              class="w-full h-64 object-cover object-top"
-            />
-            <div class="gallery-overlay">
-              <div>
-                <h4 class="text-white font-bold text-xl">DJ YouTube Series</h4>
-                <p class="text-white text-sm">Weekly performance videos</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-12 text-center">
-          <a
-            href="https://www.instagram.com/thewavformat"
-            class="bg- text-black px-8 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-lg"
-            >See more on our Instagram!</a
-          >
-        </div>
-      </div>
-    </section>
+<p class="text-white text-sm">Summer collection photoshoot</p>
+</div>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="artists">
+<img alt="DJ YouTube Series" class="w-full h-64 object-cover object-top" src="on7.jpg"/>
+<div class="gallery-overlay">
+<div>
+<h4 class="text-white font-bold text-xl">DJ YouTube Series</h4>
+<p class="text-white text-sm">Weekly performance videos</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="bg- text-black px-8 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition text-lg" href="https://www.instagram.com/thewavformat">See more on our Instagram!</a>
+</div>
+</div>
+</section>
 <!-- Embedded Instagram Section Start -->
- <!-- Social Proof Section -->
+<!-- Social Proof Section -->
 <section class="py-20 bg-gray-50">
 <div class="container mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Shot in Lagos
+            
           </h2>
-<p class="text-gray-600 max-w-2xl mx-auto">
-            Our work has been featured across platforms and publications. Here's
+<p class="text-black text-3xl font-['Rubik_Glitch']">
+            Our work has been featured <br> across platforms and publications. <br> Here's
             what our clients are sharing.
           </p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
 <div class="gallery-item relative rounded-lg overflow-hidden">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by AFTER (@what.happensafter)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg height="50px" version="1.1" viewbox="0 0 60 60" width="50px" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#000000" transform="translate(-511.000000, -20.000000)"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DLDZzRbiKYY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by AFTER (@what.happensafter)</a></p></div></blockquote>
+<script async="" src="//www.instagram.com/embed.js"></script>
 <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
 </div>
 </div>
 <div class="gallery-item relative rounded-lg overflow-hidden">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ha$$ani (@hassaniofafrica)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg height="50px" version="1.1" viewbox="0 0 60 60" width="50px" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#000000" transform="translate(-511.000000, -20.000000)"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C1cr-wqIE2g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ha$$ani (@hassaniofafrica)</a></p></div></blockquote>
+<script async="" src="//www.instagram.com/embed.js"></script>
 <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
 <div class="flex items-center">
 </div>
 </div>
 </div>
 <div class="gallery-item relative rounded-lg overflow-hidden">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by CREATIVE Production AGENCY (@thewavformat)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg height="50px" version="1.1" viewbox="0 0 60 60" width="50px" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#000000" transform="translate(-511.000000, -20.000000)"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DD2_qu-o5kt/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by CREATIVE Production AGENCY (@thewavformat)</a></p></div></blockquote>
+<script async="" src="//www.instagram.com/embed.js"></script>
 <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
 <div class="flex items-center">
 </div>
@@ -952,517 +972,361 @@
 <script async="" src="//www.instagram.com/embed.js"></script>
 </div></div></div></section>
 <!-- Embedded Instagram Section End -->
-
-    
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Client Testimonials</h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Hear what our partners have to say about working with The Wave
+<!-- Testimonials Section -->
+<section class="py-20 bg-white" id="testimonials">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4 	font-['Megrim']">Client Testimonials</h2>
+<!-- <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Hear what our partners have to say about working with The Wav
             Format Production.
-          </p>
-        </div>
-        <div class="relative">
-          <div class="testimonial-slideflex overflow-x-hidden">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
-              <div class="bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full mr-4 font-bold text-xl"
-                  >
+          </p> -->
+</div>
+<div class="relative">
+<div class="testimonial-slideflex overflow-x-hidden">
+<!-- Testimonial 1 -->
+<div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full mr-4 font-bold text-xl">
                     G
                   </div>
-                  <div>
-                    <h4 class="font-bold"></h4>
-                    <p class="text-gray-600 text-sm">
+<div>
+<h4 class="font-bold"></h4>
+<p class="text-gray-600 text-sm">
                       Marketing Director, Pulse Nigeria
                     </p>
-                  </div>
-                </div>
-                <p class="text-gray-700 mb-6">
+</div>
+</div>
+<p class="text-gray-700 mb-6">
                   "TheWavFormat team delivered beyond our expectations for
                   our summer campaign. Their ability to capture authentic
                   moments while seamlessly integrating our brand messaging
                   resulted in our highest-performing content of the year."
                 </p>
-                <div class="flex text-yellow-500">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
-              <div class="bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-secondary text-white rounded-full mr-4 font-bold text-xl"
-                  >
+<div class="flex text-yellow-500">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary text-white rounded-full mr-4 font-bold text-xl">
                     T
                   </div>
-                  <div>
-                    <h4 class="font-bold"></h4>
-                    <p class="text-gray-600 text-sm">
+<div>
+<h4 class="font-bold"></h4>
+<p class="text-gray-600 text-sm">
                       Festival Director, Lagos Sound Festival
                     </p>
-                  </div>
-                </div>
-                <p class="text-gray-700 mb-6">
+</div>
+</div>
+<p class="text-gray-700 mb-6">
                   "Working with TheWavFormat as our official media partner
                   transformed how we documented our festival. Their team
                   captured moments we didn't even know were happening, and their
                   real-time content strategy doubled our social engagement."
                 </p>
-                <div class="flex text-yellow-500">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
-              <div class="bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex items-center mb-6">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full mr-4 font-bold text-xl"
-                  >
+<div class="flex text-yellow-500">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full mr-4 font-bold text-xl">
                     F
                   </div>
-                  <div>
-                    <h4 class="font-bold"></h4>
-                    <p class="text-gray-600 text-sm">
+<div>
+<h4 class="font-bold"></h4>
+<p class="text-gray-600 text-sm">
                       Artist Manager, Afrobeats Collective
                     </p>
-                  </div>
-                </div>
-                <p class="text-gray-700 mb-6">
+</div>
+</div>
+<p class="text-gray-700 mb-6">
                   "The YouTube series we created with wavformat helped our
                   artist reach new international audiences. Their production
                   quality and creative direction elevated our visual identity
                   and led to multiple brand partnership opportunities."
                 </p>
-                <div class="flex text-yellow-500">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center mt-8">
-            <button
-              class="testimonial-dot w-3 h-3 rounded-full bg-black mx-1 active"
-            ></button>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-6xl font-bold mb-4">Partner With Us</h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+<div class="flex text-yellow-500">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<button class="testimonial-dot w-3 h-3 rounded-full bg-black mx-1 active"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-6xl font-bold mb-4 	font-['Barrio']">Partner With Us</h2>
+<!-- <p class="text-lg text-gray-700 max-w-3xl mx-auto">
             Ready to elevate your summer presence? Let's discuss how we can
             collaborate.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <!-- Contact Form -->
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
-            <form id="contact-form">
-              <div class="mb-6">
-                <label for="name" class="block text-gray-700 mb-2"
-                  >Full Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Your name"
-                />
-              </div>
-              <div class="mb-6">
-                <label for="company" class="block text-gray-700 mb-2"
-                  >Company / Organization</label
-                >
-                <input
-                  type="text"
-                  id="company"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Your company"
-                />
-              </div>
-              <div class="mb-6">
-                <label for="email" class="block text-gray-700 mb-2"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Your email"
-                />
-              </div>
-              <div class="mb-6">
-                <label for="phone" class="block text-gray-700 mb-2"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  id="phone"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Your phone number"
-                />
-              </div>
-              <div class="mb-6">
-                <label class="block text-gray-700 mb-2">Interested In</label>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <label class="custom-checkbox flex items-center">
-                    <input type="checkbox" class="hidden" />
-                    <span class="checkmark"></span>
-                    <span class="ml-7">Paid Services</span>
-                  </label>
-                  <label class="custom-checkbox flex items-center">
-                    <input type="checkbox" class="hidden" />
-                    <span class="checkmark"></span>
-                    <span class="ml-7">Brand Collaboration</span>
-                  </label>
-                  <label class="custom-checkbox flex items-center">
-                    <input type="checkbox" class="hidden" />
-                    <span class="checkmark"></span>
-                    <span class="ml-7">Media Partnership</span>
-                  </label>
-                  <label class="custom-checkbox flex items-center">
-                    <input type="checkbox" class="hidden" />
-                    <span class="checkmark"></span>
-                    <span class="ml-7">Not Sure Yet</span>
-                  </label>
-                </div>
-              </div>
-              <div class="mb-6">
-                <label for="message" class="block text-gray-700 mb-2"
-                  >Tell Us About Your Project</label
-                >
-                <textarea
-                  id="message"
-                  rows="4"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Event details, dates, goals, etc."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition"
-              >
+          </p> -->
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+<!-- Contact Form -->
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+<form id="contact-form">
+<div class="mb-6">
+<label class="block text-gray-700 mb-2" for="name">Full Name</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="name" placeholder="Your name" type="text"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 mb-2" for="company">Company / Organization</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="company" placeholder="Your company" type="text"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="email" placeholder="Your email" type="email"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="phone" placeholder="Your phone number" type="tel"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">Interested In</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="custom-checkbox flex items-center">
+<input class="hidden" type="checkbox"/>
+<span class="checkmark"></span>
+<span class="ml-7">Paid Services</span>
+</label>
+<label class="custom-checkbox flex items-center">
+<input class="hidden" type="checkbox"/>
+<span class="checkmark"></span>
+<span class="ml-7">Brand Collaboration</span>
+</label>
+<label class="custom-checkbox flex items-center">
+<input class="hidden" type="checkbox"/>
+<span class="checkmark"></span>
+<span class="ml-7">Media Partnership</span>
+</label>
+<label class="custom-checkbox flex items-center">
+<input class="hidden" type="checkbox"/>
+<span class="checkmark"></span>
+<span class="ml-7">Not Sure Yet</span>
+</label>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 mb-2" for="message">Tell Us About Your Project</label>
+<textarea class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="message" placeholder="Event details, dates, goals, etc." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-opacity-90 transition" type="submit">
                 Submit Inquiry
               </button>
-            </form>
-          </div>
-          <!-- Contact Info -->
-          <div>
-            <div
-              class="bg-yellow-900 text-white p-8 rounded-lg shadow-lg mb-8 grain-overlay"
-            >
-              <h3 class="text-2xl font-bold mb-6">Quick Connect</h3>
-              <div class="space-y-6">
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
-                  >
-                    <i class="ri-whatsapp-line ri-lg text-black"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1 text-black">WhatsApp</h4>
-                    <p class="text-black">
+</form>
+</div>
+<!-- Contact Info -->
+<div>
+<div class="bg-yellow-900 text-white p-8 rounded-lg shadow-lg mb-8 grain-overlay">
+<h3 class="text-2xl font-bold mb-6">Quick Connect</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4">
+<i class="ri-whatsapp-line ri-lg text-black"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1 text-black">WhatsApp</h4>
+<p class="text-black">
                       Get a quick response via WhatsApp
                     </p>
-                    <a
-                      href="#"
-                      class="text-white font-medium mt-2 inline-block"
-                      >Message Us</a
-                    >
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
-                  >
-                    <i class="ri-mail-line ri-lg text-black"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1 text-black">Email</h4>
-                    <p class="text-black">partnerships@wav.format.com</p>
-                    <a
-                      href="mailto:partnerships@wav.format.com"
-                      class="text-white font-medium mt-2 inline-block"
-                      >Send Email</a
-                    >
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4"
-                  >
-                    <i class="ri-map-pin-line ri-lg text-black"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1 text-black">Studio Location</h4>
-                    <p class="text-black">Victoria Island, Lagos, Nigeria</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <h3 class="text-2xl font-bold mb-6">Summer 2025 Availability</h3>
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="font-medium">June 2025</span>
-                  <span
-                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
-                    >10% Available</span
-                  >
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-green-500 h-2 rounded-full"
-                    style="width: 10%"
-                  ></div>
-                </div>
-                <div class="flex items-center justify-between mt-6">
-                  <span class="font-medium">July 2025</span>
-                  <span
-                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm"
-                    >40% Available</span
-                  >
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-yellow-500 h-2 rounded-full"
-                    style="width: 40%"
-                  ></div>
-                </div>
-                <div class="flex items-center justify-between mt-6">
-                  <span class="font-medium">August 2025</span>
-                  <span
-                    class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm"
-                    >85% Available</span
-                  >
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-red-500 h-2 rounded-full"
-                    style="width: 85%"
-                  ></div>
-                </div>
-                <div class="flex items-center justify-between mt-6">
-                  <span class="font-medium">September 2025</span>
-                  <span
-                    class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
-                    >70% Available</span
-                  >
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-blue-500 h-2 rounded-full"
-                    style="width: 70%"
-                  ></div>
-                </div>
-              </div>
-              <div class="mt-8">
-                <p class="text-gray-700 text-sm">
+<a class="text-white font-medium mt-2 inline-block" href="#">Message Us</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4">
+<i class="ri-mail-line ri-lg text-black"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1 text-black">Email</h4>
+<p class="text-black">partnerships@wav.format.com</p>
+<a class="text-white font-medium mt-2 inline-block" href="mailto:partnerships@wav.format.com">Send Email</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-black bg-opacity-20 rounded-full mr-4">
+<i class="ri-map-pin-line ri-lg text-black"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1 text-black">Studio Location</h4>
+<p class="text-black">Victoria Island, Lagos, Nigeria</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<h3 class="text-2xl font-bold mb-6">Summer 2025 Availability</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-medium">June 2025</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">10% Available</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width: 10%"></div>
+</div>
+<div class="flex items-center justify-between mt-6">
+<span class="font-medium">July 2025</span>
+<span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">40% Available</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-yellow-500 h-2 rounded-full" style="width: 40%"></div>
+</div>
+<div class="flex items-center justify-between mt-6">
+<span class="font-medium">August 2025</span>
+<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">85% Available</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+</div>
+<div class="flex items-center justify-between mt-6">
+<span class="font-medium">September 2025</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">70% Available</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div class="mt-8">
+<p class="text-gray-700 text-sm">
                   Early booking is recommended for prime weekend dates. Priority
                   booking available for recurring partnerships.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          <div>
-           <a href="http://wav.format.vercel.app"><div class="text-2xl font-['Montserrat'] mb-4"><img src="wav2.png" style="width: 100%; max-width: 150px; height: auto;">
-</div></a> 
-            <p class="text-gray-400 mb-6">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div>
+<a href="http://wav.format.vercel.app"><div class="text-2xl font-['Montserrat'] mb-4"><img src="wav2.png" style="width: 100%; max-width: 150px; height: auto;"/>
+</div></a>
+<p class="text-gray-400 mb-6">
               Capturing the pulse of Lagos' creative culture through immersive
               visual storytelling.
             </p>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
-              >
-                <i class="ri-youtube-line"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
-              >
-                <i class="ri-twitter-x-line"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
-              >
-                <i class="ri-linkedin-line"></i>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#about"
-                  class="text-gray-400 hover:text-primary transition"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  class="text-gray-400 hover:text-primary transition"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#portfolio"
-                  class="text-gray-400 hover:text-primary transition"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#testimonials"
-                  class="text-gray-400 hover:text-primary transition"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  class="text-gray-400 hover:text-primary transition"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-lg font-bold mb-4">Services</h4>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-gray-400 hover:text-primary transition"
-                  >Content Creation</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-primary transition"
-                  >Event Coverage</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-primary transition"
-                  >Brand Campaigns</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-primary transition"
-                  >Artist Collaborations</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-primary transition"
-                  >YouTube Production</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-lg font-bold mb-4">Contact Us</h4>
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
-                >
-                  <i class="ri-map-pin-line"></i>
-                </div>
-                <span class="text-gray-400"
-                  >Lekki Phase one, Lagos, Nigeria</span
-                >
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
-                >
-                  <i class="ri-mail-line"></i>
-                </div>
-                <span class="text-gray-400">info@wav.format.com</span>
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5"
-                >
-                  <i class="ri-phone-line"></i>
-                </div>
-                <span class="text-gray-400">+234 800 123 4567</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
-        >
-          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+<div class="flex space-x-4">
+<a class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition" href="#">
+<i class="ri-instagram-line"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition" href="#">
+<i class="ri-youtube-line"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition" href="#">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition" href="#">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#about">About Us</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#services">Services</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#portfolio">Portfolio</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#testimonials">Testimonials</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="https://www.instagram.com/thewavformat?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==">Contact</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Services</h4>
+<ul class="space-y-2">
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#">Content Creation</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#">Event Coverage</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#">Brand Campaigns</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#">Artist Collaborations</a>
+</li>
+<li>
+<a class="text-gray-400 hover:text-primary transition" href="#">YouTube Production</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact Us</h4>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">Lekki Phase one, Lagos, Nigeria</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@wav.format.com</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+234 800 123 4567</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">
             © 2025 wav.format Production. All rights reserved.
           </p>
-          <div class="flex space-x-6">
-            <a
-              href="#"
-              class="text-gray-400 hover:text-primary transition text-sm"
-              >Privacy Policy</a
-            >
-            <a
-              href="#"
-              class="text-gray-400 hover:text-primary transition text-sm"
-              >Terms of Service</a
-            >
-            <a
-              href="#"
-              class="text-gray-400 hover:text-primary transition text-sm"
-              >Cookie Policy</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script id="navbar-scroll">
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-primary transition text-sm" href="#">Privacy Policy</a>
+<a class="text-gray-400 hover:text-primary transition text-sm" href="#">Terms of Service</a>
+<a class="text-gray-400 hover:text-primary transition text-sm" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="navbar-scroll">
       document.addEventListener("DOMContentLoaded", function () {
         const navbar = document.getElementById("navbar");
         window.addEventListener("scroll", function () {
@@ -1504,7 +1368,7 @@
         });
       });
     </script>
-    <script id="mobile-menu">
+<script id="mobile-menu">
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
@@ -1547,7 +1411,7 @@
         });
       });
     </script>
-    <script id="portfolio-filter">
+<script id="portfolio-filter">
       document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(".portfolio-filter");
         const galleryItems = document.querySelectorAll(".gallery-item");
@@ -1573,7 +1437,7 @@
         });
       });
     </script>
-    <script id="testimonial-slider">
+<script id="testimonial-slider">
       document.addEventListener("DOMContentLoaded", function () {
         const slider = document.querySelector(".testimonial-slider");
         const dots = document.querySelectorAll(".testimonial-dot");
@@ -1620,7 +1484,7 @@
         });
       });
     </script>
-    <script id="form-handler">
+<script id="form-handler">
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", function (e) {
@@ -1662,7 +1526,7 @@
         });
       });
     </script>
-    <script id="smooth-scroll">
+<script id="smooth-scroll">
       document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll('a[href^="#"]');
         links.forEach((link) => {
@@ -1683,5 +1547,5 @@
         });
       });
     </script>
-  </body>
+</body>
 </html>
